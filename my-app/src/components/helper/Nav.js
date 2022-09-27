@@ -7,7 +7,7 @@ class Nav extends React.Component {
             <div className="nav">
                 <a href="mailto:aamishajangra@gmail.com" className="nav-btn">Request Change</a>
                 <Link to="/feed" className="nav-btn">Feed</Link>
-                <Link to="/defense" className="nav-btn">Self Defense</Link>
+                <a href="../defense.html" className="nav-btn">Self Defense</a>
                 <Link to="/" className="nav-btn">Logout</Link>
             </div>
         );
