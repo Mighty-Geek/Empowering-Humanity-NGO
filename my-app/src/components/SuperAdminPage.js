@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 class SuperAdminPage extends React.Component {
     render() {
         return (
-            <div className="nav">
-                <a href="mailto:aamishajangra@gmail.com" className="nav-btn">Request Change</a>
-                <Link to="/feed" className="nav-btn">Feed</Link>
-                <a href="../defense.html" className="nav-btn">Self Defense</a>
-                <Link to="/" className="nav-btn">Logout</Link>
-            </div>
+            <>
+                <h1>Welcome to Super admin page!</h1>
+                <div>
+                    Here, would be a table containing details handy for super admin
+                </div>
+            </>
         );
     }
 }
