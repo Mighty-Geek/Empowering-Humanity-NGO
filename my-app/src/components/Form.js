@@ -126,7 +126,7 @@ export default function Form() {
                 <input onChange={handlePassword} className="input"
                     value={password} type="password" />
 
-                <button onClick={handleSubmit} className="btn" type="submit">
+                <button onClick={handleSubmit} className="form-btn" type="submit">
                     Submit
                 </button>
             </form>
