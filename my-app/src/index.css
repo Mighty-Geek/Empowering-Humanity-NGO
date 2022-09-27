@@ -128,3 +128,59 @@ body {
 .comment {
   width: 32rem;
 }
+
+form {
+  text-align: center;
+  background-color: #111;
+  width: fit-content;
+  padding: 1rem;
+  margin-left: 38%;
+  margin-top: 0.5rem;
+}
+
+.label {
+  display: block;
+  font-size: larger;
+  color: white;
+  padding: 5px;
+}
+
+.input {
+  font-size: larger;
+  padding: 5px;
+  margin: 2px;
+
+}
+
+.btn {
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  font-size: larger;
+  display: block;
+  padding: 5px;
+  margin: 10px auto;
+}
+
+.messages {
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  display: block;
+  background-color: red;
+  color: white;
+  width: fit-content;
+  height: 50px;
+  padding: 5px;
+}
+
+.success {
+  display: block;
+  background-color: lightblue;
+  color: black;
+  width: fit-content;
+  height: 50px;
+  padding: 5px;
+}
