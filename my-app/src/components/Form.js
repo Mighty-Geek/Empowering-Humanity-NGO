@@ -116,7 +116,7 @@ export default function Form() {
                 </select>
 
                 <label className="label">Emergency Contacts</label>
-                <input onChange={handleContacts} className="input" value={contacts} type="text" multiple size="4" />
+                <input onChange={handleContacts} className="input" value={contacts} type="text" />
 
                 <label className="label">Email</label>
                 <input onChange={handleEmail} className="input"

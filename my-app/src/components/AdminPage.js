@@ -1,32 +1,29 @@
 import React from 'react';
-import GoogleMapReact from 'google-map-react';
-
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+import Nav from './helper/Nav';
+import CustomMarker from './helper/CustomMarker';
+import { GoogleMap, Marker } from "react-google-maps"
 
 function AdminPage() {
-    const defaultProps = {
-        center: {
-            lat: 10.99835602,
-            lng: 77.01502627
-        },
-        zoom: 11
-    };
+
+    const data = [
+        { info: 'Rome', lat: 41.903, lng: 12.496 },
+        { info: 'New York', lat: 40.712, lng: -74.005 }
+    ]
 
     return (
-        // Important! Always set the container height explicitly
-        <div style={{ height: '100vh', width: '100%' }}>
-            <GoogleMapReact
-                bootstrapURLKeys={{ key: "" }}
-                defaultCenter={defaultProps.center}
-                defaultZoom={defaultProps.zoom}
+        <>
+            <div className="heading">
+                <h1>Suraksha</h1>
+                <h3>Portal</h3>
+            </div>
+            <Nav />
+            <GoogleMap
+                defaultZoom={8}
+                defaultCenter={{ lat: -34.397, lng: 150.644 }}
             >
-                <AnyReactComponent
-                    lat={59.955413}
-                    lng={30.337844}
-                    text="My Marker"
-                />
-            </GoogleMapReact>
-        </div>
+                {data.map(props => <CustomMarker {...props} />)}
+            </GoogleMap>
+        </>
     );
 }
 
