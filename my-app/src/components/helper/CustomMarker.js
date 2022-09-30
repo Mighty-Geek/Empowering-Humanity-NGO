@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { Marker, InfoWindow } from 'react-google-maps';
+import UserCard from '../UserCard';
 
 class CustomMarker extends Component {
     state = {
-        showInfoWindow: false
+        showInfoWindow: true
     };
     handleMouseOver = e => {
         this.setState({
-            showInfoWindow: true
+            showInfoWindow: false
         });
     };
     handleMouseExit = e => {
@@ -17,13 +18,15 @@ class CustomMarker extends Component {
     };
     render() {
         const { showInfoWindow } = this.state;
-        const { info, lat, lng } = this.props;
+        const { info, lat, lng } = this.props.details.coordinates;
+        console.log(this.props.details.coordinates);
         return (
             <Marker position={{ lat, lng }} onMouseOver=
                 {this.handleMouseOver} onMouseOut={this.handleMouseExit}>
                 {showInfoWindow && (
                     <InfoWindow>
                         <h4>{info}</h4>
+                        <UserCard users={this.props.details} />
                     </InfoWindow>
                 )}
             </Marker>

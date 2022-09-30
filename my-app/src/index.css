@@ -128,3 +128,72 @@ body {
 .comment {
   width: 32rem;
 }
+
+.admin-map {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 25rem;
+  width: 45rem;
+}
+
+.usr {
+  position: absolute;
+  border-radius: 50%;
+  border: 0.5rem solid green;
+  width: 2px;
+  height: 2px;
+  cursor: pointer;
+}
+
+.a {
+  left: 65%;
+  top: 50%;
+}
+
+.b {
+  left: 70%;
+  top: 50%;
+}
+
+.c {
+  left: 70%;
+  top: 55%;
+}
+
+.d {
+  left: 65%;
+  top: 70%;
+}
+
+.e {
+  left: 70%;
+  top: 70%;
+}
+
+.f {
+  left: 55%;
+  top: 70%;
+}
+
+.g {
+  left: 45%;
+  top: 60%;
+}
+
+.h {
+  left: 35%;
+  top: 50%;
+}
+
+.danger {
+  border: 0.5rem solid red;
+}
+
+.tbl {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  width: 50rem;
+}

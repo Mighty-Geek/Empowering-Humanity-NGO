@@ -2,13 +2,6 @@ import React from 'react';
 import Nav from './helper/Nav.js';
 
 class UserPage extends React.Component {
-    state = {
-        name: null,
-        location: null,
-        video: null,
-        audio: null,
-        contacts: {},
-    }
     render() {
         return (
             <>
